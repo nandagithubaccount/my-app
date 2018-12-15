@@ -1,3 +1,18 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="content">
+    <ion-header>
+      <ion-toolbar color="danger">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item (click)="navigateTo(route.ISSUER_LIST)">Issuers</ion-item>
+        <ion-item (click)="navigateTo(route.ISSUER_REG)">Issuer Reg</ion-item>
+        <ion-item (click)="navigateTo(route.CUSTOMER_LIST)">Customers</ion-item>
+        <ion-item (click)="navigateTo(route.CUSTOMER_REG)">Customer Reg</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content"></ion-router-outlet>
 </ion-app>
