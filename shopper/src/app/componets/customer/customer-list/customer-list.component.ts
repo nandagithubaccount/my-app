@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { RouteConstants } from '../../../shared/constants/constants';
 
 @Component({
   selector: 'app-customer-list',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  addCustomer() {
+    this.router.navigate([RouteConstants.CUSTOMER_REG])
+  }
+  addBalance() {
+    this.router.navigate([RouteConstants.CUSTOMER_BAL])
+  }
 }

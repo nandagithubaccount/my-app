@@ -13,9 +13,13 @@ import { IssuerListComponent } from './componets/isser/issuer-list/issuer-list.c
 import { CustomerListComponent } from './componets/customer/customer-list/customer-list.component';
 import { CustomerRegComponent } from './componets/customer/customer-reg/customer-reg.component';
 import { IssuerRegComponent } from './componets/isser/issuer-reg/issuer-reg.component';
+import { CustomerBalComponent } from './componets/customer/customer-bal/customer-bal.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, IssuerRegComponent, IssuerListComponent, CustomerListComponent, CustomerRegComponent],
+  declarations: [
+    AppComponent, LoginComponent, IssuerRegComponent,
+    IssuerListComponent, CustomerListComponent, CustomerRegComponent,
+    CustomerBalComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [

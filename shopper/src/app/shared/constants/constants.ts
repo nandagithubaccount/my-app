@@ -4,4 +4,5 @@ export enum RouteConstants {
     ISSUER_REG = "issuerReg",
     CUSTOMER_LIST = "customerList",
     CUSTOMER_REG = "customerReg",
+    CUSTOMER_BAL = "customerBal",
 }

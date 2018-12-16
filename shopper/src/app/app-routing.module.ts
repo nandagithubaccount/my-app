@@ -7,6 +7,7 @@ import { IssuerListComponent } from './componets/isser/issuer-list/issuer-list.c
 import { IssuerRegComponent } from './componets/isser/issuer-reg/issuer-reg.component';
 import { CustomerListComponent } from './componets/customer/customer-list/customer-list.component';
 import { CustomerRegComponent } from './componets/customer/customer-reg/customer-reg.component';
+import { CustomerBalComponent } from './componets/customer/customer-bal/customer-bal.component';
 
 const routes: Routes = [
   { path: '', redirectTo: RouteConstants.LOGIN, pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: RouteConstants.ISSUER_REG, component: IssuerRegComponent },
   { path: RouteConstants.CUSTOMER_LIST, component: CustomerListComponent },
   { path: RouteConstants.CUSTOMER_REG, component: CustomerRegComponent },
+  { path: RouteConstants.CUSTOMER_BAL, component: CustomerBalComponent },
 ];
 
 @NgModule({
